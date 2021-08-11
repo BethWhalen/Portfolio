@@ -1,3 +1,13 @@
+// all sections in main
+.aboutMe,
+.experience,
+.skillsIcons,
+.sayHello,
+.portfolio,
+.contact {
+    margin-top: 75px;
+}
+
 // ------------- aboutMe section -------------------
 .aboutMe {
     // height: 50vh;
@@ -5,7 +15,6 @@
     font-family: $primaryFont;
     display: flex;
     // about me has two divs .aboutText & .aboutImg
-    margin-top: 75px;
     // border: 2px solid yellowgreen;
 }
 
@@ -98,7 +107,6 @@ h4 {
 }
 
 .experience li {
-    list-style: none;
     margin: 10px 0;
     // border: 2px solid purple;
     position: relative;
@@ -221,7 +229,19 @@ h5 {
 
 .portfolio h3 {
     text-align: center;
+    position: relative;
     // border: 2px solid teal;
+}
+
+.portfolio h3::before {
+    content: '';
+    height: 5px;
+    width: 6%;
+    background-color: $secondaryColor;
+    position: absolute;
+    top: -10px;
+    left: 47%;
+
 }
 
 // .portGallery {
@@ -234,7 +254,6 @@ h5 {
     flex-wrap: wrap;
     padding: 30px;
         li {
-            list-style: none;
             // border: 2px dotted deeppink;
             width: calc((100% - 30px) / 2);
             margin-right: 30px;
@@ -272,3 +291,38 @@ h5 {
 //             margin-bottom: 30px;
 //         }
 // }
+
+
+// ====== CONTACT SECTION ==========
+.contact {
+    background-image: url(../assets/IMG_6479m.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+
+.contact h3 {
+    color: white;
+    text-align: center;
+    padding: 75px;
+    // border: 2px solid green;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    // border: 2px solid cornflowerblue;
+}
+
+// .contact li {
+    
+//     border: 2px solid crimson;
+// }
+
+// each li on hover
+
+
+.contact i {
+    font-size: 4rem;
+}
+

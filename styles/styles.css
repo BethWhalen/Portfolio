@@ -259,6 +259,10 @@ h3 {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 header {
   background-image: url(../assets/IMG_5820cm.JPG);
   background-size: cover;
@@ -339,13 +343,21 @@ h2 {
   margin-right: 50px;
 }
 
+.aboutMe,
+.experience,
+.skillsIcons,
+.sayHello,
+.portfolio,
+.contact {
+  margin-top: 75px;
+}
+
 .aboutMe {
   color: #6F6F6F;
   font-family: "Asap", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 75px;
 }
 
 .aboutText {
@@ -433,7 +445,6 @@ h4 {
 }
 
 .experience li {
-  list-style: none;
   margin: 10px 0;
   position: relative;
 }
@@ -544,6 +555,17 @@ h5 {
 
 .portfolio h3 {
   text-align: center;
+  position: relative;
+}
+
+.portfolio h3::before {
+  content: "";
+  height: 5px;
+  width: 6%;
+  background-color: #6F6F6F;
+  position: absolute;
+  top: -10px;
+  left: 47%;
 }
 
 .galleryContainer {
@@ -555,7 +577,6 @@ h5 {
   padding: 30px;
 }
 .galleryContainer li {
-  list-style: none;
   width: calc((100% - 30px) / 2);
   margin-right: 30px;
 }
@@ -567,4 +588,30 @@ h5 {
 }
 .galleryContainer li:nth-child(-n+2) {
   margin-bottom: 30px;
+}
+
+.contact {
+  background-image: url(../assets/IMG_6479m.jpg);
+  background-size: cover;
+  height: 40vh;
+  color: white;
+}
+
+.contact h3 {
+  color: white;
+  text-align: center;
+  padding: 75px;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact i {
+  font-size: 4rem;
 }
