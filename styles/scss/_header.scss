@@ -1,13 +1,17 @@
 header {
-    background-color: dimgray;
+    // background-color: dimgray;
+    background-image: url(../assets/IMG_5820cm.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 110vh;
     color: white;
 }
 
 // topHeader - empty now, will contain logo & burger menu button
 .topHeader {
-    border: 2px solid coral;
-    height: 5%;
+    // border: 2px solid coral;
+    height: 6%;
 }
 
 // logo and burger menu button here
@@ -17,26 +21,26 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90%;
+    height: 88%;
     width: 70%;
     margin: 0 auto;
-    border: 2px solid yellowgreen;
+    // border: 2px solid yellowgreen;
 }
 
 h1 {
     font-family: $secondaryFont;
     font-weight: 600;
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 20px 0;
-    border: 2px solid fuchsia;
+    // border: 2px solid fuchsia;
 }
 
 h2 {
     font-family: $secondaryFont;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 0 20px 0;
-    border: 2px dotted blue;
+    // border: 2px dotted blue;
 }
 
 // anchor
@@ -44,7 +48,7 @@ h2 {
     align-self: flex-start;
     font-family: $primaryFont;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -55,22 +59,26 @@ h2 {
 
 // lower nav bar section
 .lowHeader {
-    height: 5%;
-    background-color: #333333;
-    border: 2px solid yellow;
+    height: 6%;
+    background-color: $primaryColor;
+    position: sticky;
+    // border: 2px solid yellow;
 }
 
 .stickyNav {
     height: 100%;
     display: flex;
     align-items: center;
-    border: 2px dashed aqua;
+    // border: 2px dashed aqua;
         a {
             font-family: $primaryFont;
             font-weight: 500;
             font-size: 1.7rem;
             text-decoration: none;
             color: white;
-            border: 2px solid red;
+            padding: 5px;
+            margin-right: 50px;
+            // border-bottom: 2px solid white;
+            // text-decoration: underline;
         }
 }

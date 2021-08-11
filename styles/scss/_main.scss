@@ -1,0 +1,159 @@
+// ------------- aboutMe section -------------------
+.aboutMe {
+    // height: 50vh;
+    color: $secondaryColor;
+    font-family: $primaryFont;
+    display: flex;
+    // about me has two divs .aboutText & .aboutImg
+    margin-top: 75px;
+    // border: 2px solid yellowgreen;
+}
+
+.aboutText {
+    width: calc(100% / 2);
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: 2px solid red;
+        p {
+            font-size: 1.6rem;
+            margin: 20px 0;
+            // border: 2px dotted fuchsia;
+        }
+}
+
+// move to global - all h1-h6
+h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 215px;
+    // border: 2px dashed blue;
+}
+
+
+// a tag
+.downloadCV {
+    align-self: flex-start;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.aboutImg {
+    width: calc(100% / 2);
+    padding-left: 25px;
+    // border: 2px solid orange;
+        img {
+            // border: 2px dotted purple;
+        }
+}
+
+// ------------- EXPERIENCE SECTION -------------------
+.experience {
+    margin-top: 75px;
+    display: flex;
+    // experience has two children sections- education & skills
+    color: $secondaryColor;
+    font-family: $primaryFont;
+    // border: 2px solid chocolate;
+}
+
+// Education
+.education {
+    width: calc(100% / 2);
+    padding-right: 25px;
+    // border: 2px dotted teal;
+        ul {
+            margin-left: 40px;
+        }
+}
+
+h4 {
+    // education & skill titles
+    margin: 0;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    // border: 2px dashed blue;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid yellow;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    // border: 2px solid purple;
+    position: relative;
+}
+// FIX THESE BEFORE AND AFTER ELEMENTS!!!!!!!!!!!!!!!!!
+.skill li::before {
+    content: '';
+    width: 98%;
+    height: 10px;
+    // border: 2px solid $primaryColor;
+    border-radius: 15px;
+    background: grey;
+    position: absolute;
+    bottom: -27px;
+    right: 3px;
+}
+
+.skill li::after {
+    content: '';
+    width: 100%;
+    height: 16px;
+    border: 2px solid $primaryColor;
+    border-radius: 15px;
+    // background: grey;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+h5 {
+    // in education & skill (sub headings)
+    color: $primaryColor;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    // border: 2px solid black;
+}
+
+.experience p {
+    margin: 5px 0;
+    font-size: 1.4rem;
+    // border: 2px dashed red;
+}
+
+.dateOfEd {
+    font-size: 1.6rem;
+    font-weight: 700;
+    // border: 2px solid fuchsia;
+}
+
+// Skill section
+.skill {
+    width: calc(100% / 2);
+    padding-left: 25px;
+    // border: 2px solid olivedrab;
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px;
+        }
+    }
+    
+.skill h5 {
+    font-size: 1.6rem;
+}

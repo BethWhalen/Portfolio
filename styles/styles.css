@@ -239,15 +239,28 @@ html {
   font-size: 62.5%;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
-  background-color: dimgray;
+  background-image: url(../assets/IMG_5820cm.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 110vh;
   color: white;
 }
 
 .topHeader {
-  border: 2px solid coral;
-  height: 5%;
+  height: 6%;
 }
 
 .midHeader {
@@ -261,26 +274,23 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90%;
+  height: 88%;
   width: 70%;
   margin: 0 auto;
-  border: 2px solid yellowgreen;
 }
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 20px 0;
-  border: 2px solid fuchsia;
 }
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0 0 20px 0;
-  border: 2px dotted blue;
 }
 
 .hireMe {
@@ -288,7 +298,7 @@ h2 {
       align-self: flex-start;
   font-family: "Asap", sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -297,9 +307,9 @@ h2 {
 }
 
 .lowHeader {
-  height: 5%;
+  height: 6%;
   background-color: #333333;
-  border: 2px solid yellow;
+  position: sticky;
 }
 
 .stickyNav {
@@ -310,7 +320,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px dashed aqua;
 }
 .stickyNav a {
   font-family: "Asap", sans-serif;
@@ -318,5 +327,155 @@ h2 {
   font-size: 1.7rem;
   text-decoration: none;
   color: white;
-  border: 2px solid red;
+  padding: 5px;
+  margin-right: 50px;
+}
+
+.aboutMe {
+  color: #6F6F6F;
+  font-family: "Asap", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 75px;
+}
+
+.aboutText {
+  width: calc(100% / 2);
+  padding-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutText p {
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 215px;
+}
+
+.downloadCV {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+}
+
+.aboutImg {
+  width: calc(100% / 2);
+  padding-left: 25px;
+}
+.experience {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6F6F6F;
+  font-family: "Asap", sans-serif;
+}
+
+.education {
+  width: calc(100% / 2);
+  padding-right: 25px;
+}
+.education ul {
+  margin-left: 40px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0;
+  position: relative;
+}
+
+.skill li::before {
+  content: "";
+  width: 98%;
+  height: 10px;
+  border-radius: 15px;
+  background: grey;
+  position: absolute;
+  bottom: -27px;
+  right: 3px;
+}
+
+.skill li::after {
+  content: "";
+  width: 100%;
+  height: 16px;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+
+h5 {
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.experience p {
+  margin: 5px 0;
+  font-size: 1.4rem;
+}
+
+.dateOfEd {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.skill {
+  width: calc(100% / 2);
+  padding-left: 25px;
+}
+.skill li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px;
+}
+
+.skill h5 {
+  font-size: 1.6rem;
 }
