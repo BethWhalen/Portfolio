@@ -65,10 +65,21 @@
 .education {
     width: calc(100% / 2);
     padding-right: 25px;
+    position: relative;
     // border: 2px dotted teal;
         ul {
             margin-left: 40px;
         }
+}
+
+.education::before {
+    content: '';
+    height: 80%;
+    width: 2px;
+    background-color: $secondaryColor;
+    position: absolute;
+    left: 10px;
+    bottom: 27px;
 }
 
 h4 {
@@ -100,6 +111,18 @@ h5 {
     font-weight: 700;
     margin: 0;
     // border: 2px solid black;
+}
+
+.education h5::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid $secondaryColor;
+    border-radius: 50%;
+    position: absolute;
+    left: -39px;
+    
 }
 
 .experience p {
@@ -192,30 +215,60 @@ h5 {
 }
 
 // PORTFOLIO GALLERY SECTION
-.portfolio{
-    border: 2px solid coral;
-}
+// .portfolio{
+//     border: 2px solid coral;
+// }
 
 .portfolio h3 {
-    border: 2px solid teal;
+    text-align: center;
+    // border: 2px solid teal;
 }
 
-.portGallery {
-    border: 2px solid blue;
-}
+// .portGallery {
+//     // border: 2px solid blue;
+// }
 
 .galleryContainer {
     display: flex;
     // flex-direction: column;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 30px;
         li {
             list-style: none;
-            border: 2px dotted deeppink;
-            width: calc(100% / 2);
+            // border: 2px dotted deeppink;
+            width: calc((100% - 30px) / 2);
+            margin-right: 30px;
                 img {
                     width: 100%;
                 }
         }
-
+        li:nth-child(2n) {
+            margin-right: 0;
+        }
+        li:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
 }
+
+// SETTINGS FOR 3 IN A ROW GALLERY
+// .galleryContainer {
+//     display: flex;
+//     // flex-direction: column;
+//     flex-wrap: wrap;
+//     padding: 30px;
+//         li {
+//             list-style: none;
+//             border: 2px dotted deeppink;
+//             width: calc((100% - 60px) / 3);
+//             margin-right: 30px;
+//                 img {
+//                     width: 100%;
+//                 }
+//         }
+//         li:nth-child(3n) {
+//             margin-right: 0;
+//         }
+//         li:nth-child(-n+3) {
+//             margin-bottom: 30px;
+//         }
+// }
