@@ -35,9 +35,19 @@
 // move to global - all h1-h6
 .aboutMe h3 {
     max-width: 215px;
+    position: relative;
     // border: 2px dashed blue;
 }
 
+.aboutMe h3::before {
+    content: '';
+    height: 5px;
+    width: 18%;
+    background-color: $secondaryColor;
+    position: absolute;
+    top: -10px;
+    left: 1%;
+}
 
 // a tag
 .downloadCV {
@@ -51,13 +61,14 @@
     border: 2px solid black;
 }
 
+.downloadCV:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+
 .aboutImg {
     width: calc(100% / 2);
     padding-left: 25px;
-    // border: 2px solid orange;
-        // img {
-        //     // border: 2px dotted purple;
-        // }
 }
 
 // ------------- EXPERIENCE SECTION -------------------
@@ -241,7 +252,6 @@ h5 {
     position: absolute;
     top: -10px;
     left: 47%;
-
 }
 
 // .portGallery {
@@ -297,7 +307,7 @@ h5 {
 .contact {
     background-image: url(../assets/IMG_6479m.jpg);
     background-size: cover;
-    height: 40vh;
+    background-position: center;
     color: white;
 }
 
@@ -305,24 +315,84 @@ h5 {
     color: white;
     text-align: center;
     padding: 75px;
+    position: relative;
     // border: 2px solid green;
+}
+
+.contact h3::before {
+    content: '';
+    height: 5px;
+    width: 6%;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    left: 47%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    // border: 2px solid red;
+        input,
+        textarea {
+            font-family: $primaryFont;
+            color: $primaryColor;
+            margin-top: 15px;
+            padding: 10px;
+        }
+}
+
+.contactForm input {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+}
+
+.contactForm input:nth-child(n+3) {
+    margin-right: 0;
+}
+
+.topInputsContainer {
+    display: flex;
+}
+.contactForm button {
+    align-self: center;
+    border: none;
+    font-family: $primaryFont;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $primaryColor;
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.contactForm button:hover {
+    background-color: black;
+    color: white;
 }
 
 .contact ul {
     display: flex;
     justify-content: space-evenly;
+    margin: 50px 0;
     // border: 2px solid cornflowerblue;
 }
 
-// .contact li {
-    
-//     border: 2px solid crimson;
-// }
-
-// each li on hover
+.contact a {
+    color: white;
+}
 
 
 .contact i {
     font-size: 4rem;
 }
 
+.contact i:hover {
+    // color: black;
+    transform: scale(1.3);
+}

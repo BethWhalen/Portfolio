@@ -52,15 +52,23 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    // fix the width
     padding: 5px 10px;
     border: 2px solid white;
+}
+
+.hireMe:hover {
+    background-color: black;
 }
 
 // lower nav bar section
 .lowHeader {
     height: 6%;
     background-color: $primaryColor;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    // z-index: 9000;
     // border: 2px solid yellow;
 }
 
