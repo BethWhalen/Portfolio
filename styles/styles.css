@@ -237,6 +237,7 @@ html {
 
 html {
   font-size: 62.5%;
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -330,6 +331,7 @@ h2 {
   right: 0;
   top: 0;
   width: 100%;
+  z-index: 9000;
 }
 
 .stickyNav {
@@ -605,14 +607,55 @@ h5 {
   width: calc((100% - 30px) / 2);
   margin-right: 30px;
 }
-.galleryContainer li img {
-  width: 100%;
-}
 .galleryContainer li:nth-child(2n) {
   margin-right: 0;
 }
 .galleryContainer li:nth-child(-n+2) {
   margin-bottom: 30px;
+}
+
+.portGallery img {
+  width: 100%;
+}
+
+.projectContainer {
+  position: relative;
+}
+
+.projectCaption {
+  background-color: #333333;
+  color: white;
+  font-family: "Asap", sans-serif;
+  position: absolute;
+  height: 98%;
+  width: 80%;
+  opacity: 0;
+}
+.projectCaption a {
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 2px solid white;
+}
+.projectCaption a:hover {
+  background-color: black;
+}
+.projectCaption h4 {
+  color: #F4B36B;
+}
+.projectCaption p {
+  font-size: 1.4rem;
+}
+
+.projectCaption:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact {

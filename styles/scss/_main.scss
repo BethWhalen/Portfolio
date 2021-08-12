@@ -233,10 +233,7 @@ h5 {
     left: 3px;
 }
 
-// PORTFOLIO GALLERY SECTION
-// .portfolio{
-//     border: 2px solid coral;
-// }
+// ====== PORTFOLIO GALLERY SECTION =============
 
 .portfolio h3 {
     text-align: center;
@@ -254,10 +251,7 @@ h5 {
     left: 47%;
 }
 
-// .portGallery {
-//     // border: 2px solid blue;
-// }
-
+// ul element
 .galleryContainer {
     display: flex;
     // flex-direction: column;
@@ -267,9 +261,6 @@ h5 {
             // border: 2px dotted deeppink;
             width: calc((100% - 30px) / 2);
             margin-right: 30px;
-                img {
-                    width: 100%;
-                }
         }
         li:nth-child(2n) {
             margin-right: 0;
@@ -279,29 +270,53 @@ h5 {
         }
 }
 
-// SETTINGS FOR 3 IN A ROW GALLERY
-// .galleryContainer {
-//     display: flex;
-//     // flex-direction: column;
-//     flex-wrap: wrap;
-//     padding: 30px;
-//         li {
-//             list-style: none;
-//             border: 2px dotted deeppink;
-//             width: calc((100% - 60px) / 3);
-//             margin-right: 30px;
-//                 img {
-//                     width: 100%;
-//                 }
-//         }
-//         li:nth-child(3n) {
-//             margin-right: 0;
-//         }
-//         li:nth-child(-n+3) {
-//             margin-bottom: 30px;
-//         }
-// }
+.portGallery img {
+    width: 100%;
+}
 
+// within each li element is an itemContainer div
+// opacity option
+.projectContainer {
+    // border: 2px solid red;
+    position: relative;
+}
+.projectCaption {
+    background-color: $primaryColor;
+    color: white;
+    font-family: $primaryFont;
+    position: absolute;
+    // left: 0;
+    // bottom: 0;
+    height: 98%;
+    width: 80%;
+    opacity: 0;
+        a {
+            font-family: $primaryFont;
+            font-weight: 500;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 2px solid white;
+        }
+        a:hover {
+            background-color: black;
+        }
+        h4 {
+            color: #F4B36B;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+}
+
+
+.projectCaption:hover {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
 
 // ====== CONTACT SECTION ==========
 .contact {

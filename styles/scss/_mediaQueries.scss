@@ -1,7 +1,31 @@
+// mid size ==============================================
+@media (max-width: 749px) {
+    // ul element - two column
+    // .galleryContainer {
+    //     display: flex;
+    //     // flex-direction: column;
+    //     flex-wrap: wrap;
+    //     padding: 30px;
+    //         li {
+    //             // border: 2px dotted deeppink;
+    //             width: calc((100% - 30px) / 2);
+    //             margin-right: 30px;
+    //         }
+    //         li:nth-child(2n) {
+    //             margin-right: 0;
+    //         }
+    //         li:nth-child(-n+2) {
+    //             margin-bottom: 30px;
+    //         }
+    // }
 
 
 
-// cell phone
+
+}
+
+
+// cell phone =============================================
 @media (max-width: 400px) {
     // HEADER SECTION
     header {
