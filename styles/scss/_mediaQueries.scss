@@ -1,4 +1,4 @@
-// mid size ==============================================
+// mid/lg size ==============================================
 @media (max-width: 950px) {
 
     .experience {
@@ -19,34 +19,11 @@
             }
     }
 
-
-    // ul element - two column
-    // .galleryContainer {
-    //     display: flex;
-    //     // flex-direction: column;
-    //     flex-wrap: wrap;
-    //     padding: 30px;
-    //         li {
-    //             // border: 2px dotted deeppink;
-    //             width: calc((100% - 30px) / 2);
-    //             margin-right: 30px;
-    //         }
-    //         li:nth-child(2n) {
-    //             margin-right: 0;
-    //         }
-    //         li:nth-child(-n+2) {
-    //             margin-bottom: 30px;
-    //         }
-    // }
-
-
-
-
 }
 
 
-// cell phone =============================================
-@media (max-width: 700px) {
+// sm/md and lower =====================================
+@media (max-width: 800px) {
     // HEADER SECTION
     header {
         height: 70vh;
@@ -117,7 +94,7 @@
     }
 
     .skill {
-        // padding-left: 0;
+
         li {
             margin: 25px 0;
         }
@@ -162,16 +139,5 @@
         width: 100%;
         margin-right: 0;
     }
-
-    // .contactForm input:nth-child(n+3) {
-    //     margin-right: 0;
-    // }
-
-
-
-
-
-
-
 
 }
