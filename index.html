@@ -20,7 +20,7 @@
             <!-- insert hamburger menu here -->
         </nav>
         <!-- mid section of header -->
-        <section class="midHeader">
+        <section id="home" class="midHeader">
             <h1>I'm Beth Whalen</h1>
             <h2>Front-End Web Developer</h2>
             <a href="#contact" class="hireMe">Hire Me</a>
@@ -28,7 +28,7 @@
         <!-- lower section of header -->            
         <section class="lowHeader">
             <nav class="stickyNav wrapper">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
                 <a href="#about">About Me</a>
                 <a href="#portfolio">Portfolio</a>
                 <!-- <a href="#">Testimonials</a> -->
@@ -44,7 +44,7 @@
             <div class="aboutText">
                 <h3>Know More About Me</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quis laboriosam labore doloribus iure facere, praesentium libero! Alias velit consequuntur laborum error fuga hic eveniet et praesentium accusantium aut reiciendis iusto unde quidem incidunt aliquam est, porro dolorum quaerat ea. Quibusdam consequuntur quo cum tempora?</p>
-                <a href="" class="downloadCV">Download My CV</a>
+                <a href="https://www.canva.com/design/DAEm2SjQrws/2YwCSEQCfie04NR8mrD6Eg/view?utm_content=DAEm2SjQrws&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" class="downloadCV">Download My CV</a>
             </div>
             <div class="aboutImg">
                 <img src="../assets/IMG_5127c.PNG" alt="Beth in a canoe on a lake in nova scotia">
@@ -58,12 +58,12 @@
                 <h4>Recent Education</h4>
                 <ul>
                     <li>
-                        <h5>Web Developer</h5>
-                        <p class="dateOfEd">Date</p>
+                        <h5>Web Developement Bootcamp</h5>
+                        <p class="dateOfEd">June 2021 - August 2021</p>
                         <p>details - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem autem debitis repudiandae ut quam dignissimos!</p>
                     </li>
                     <li>
-                        <h5>Web Developer</h5>
+                        <h5>JavaScript</h5>
                         <p class="dateOfEd">Date</p>
                         <p>details - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem autem debitis repudiandae ut quam dignissimos!</p>
                     </li>
@@ -156,7 +156,7 @@
             <div class="contactContainer wrapper">
                 <h3>Say Hello!</h3>
 
-                <form action="" method="POST" class="contactForm" name="contactForm">
+                <form method="POST" data-netlify="true" class="contactForm" name="contactForm">
                     <div class="topInputsContainer">
                         <label for="userName" class="sr-only">Your Name</label>
                         <input type="text" id="userName" name="userName" placeholder="Name" required="true">
@@ -171,36 +171,41 @@
                     <button type="submit">Submit</button>
 
                 </form>
-
-                <ul>
-                    <li class="email">
-                        <a href="mailto:beth.whalen@gmail.com">
-                            <i class="fas fa-envelope"></i>
+                <div class="contactNav">
+                    <ul>
+                        <li class="email">
+                            <a href="mailto:beth.whalen@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/beth-whalen-5983a352/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/BethWhalen">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="phone">
+                            <a href="tel:9022297031">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="returnHome">
+                        <a href="#home">
+                            <i class="fas fa-angle-up"></i>
                         </a>
-                    </li>
-                    <li class="linkedin">
-                        <a href="https://www.linkedin.com/in/beth-whalen-5983a352/">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="github">
-                        <a href="https://github.com/BethWhalen">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="phone">
-                        <a href="tel:9022297031">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- MAIN END -->
     <footer>
-
-
+        <p>Created by Beth Whalen</p>
     </footer>
 </body>
 </html>
