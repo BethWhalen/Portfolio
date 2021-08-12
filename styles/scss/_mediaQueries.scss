@@ -1,5 +1,25 @@
 // mid size ==============================================
-@media (max-width: 749px) {
+@media (max-width: 950px) {
+
+    .experience {
+        flex-direction: column;
+    }
+
+    .education,
+    .skill {
+        width: 100%;
+    }
+
+    .skill {
+        margin-top: 75px;
+            ul {
+                li {
+                    width: calc(100% / 4);
+                }
+            }
+    }
+
+
     // ul element - two column
     // .galleryContainer {
     //     display: flex;
@@ -26,7 +46,7 @@
 
 
 // cell phone =============================================
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     // HEADER SECTION
     header {
         height: 70vh;
@@ -124,10 +144,28 @@
 
 // CONTACT SECTION
     .contact h3 {
-        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
 
+    .contact h3:before {
+        top: 45px;
+    }
 
+    .contactForm {
+        max-width: 100%;
+    }
+    .topInputsContainer {
+        flex-direction: column;
+    }
+    .contactForm input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    // .contactForm input:nth-child(n+3) {
+    //     margin-right: 0;
+    // }
 
 
 
