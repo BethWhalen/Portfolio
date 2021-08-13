@@ -1,5 +1,4 @@
 header {
-    // background-image: url(../assets/IMG_5820cm.JPG);
     background-image: url(../assets/IMG_5603.jpg);
     background-size: cover;
     background-position: center;
@@ -18,6 +17,11 @@ header {
     margin: 0 auto;
 }
 
+.profile {
+    max-width: 200px;
+    // border: 1px solid $accentColorC;
+    border-radius: 50%;
+}
 h1 {
     font-family: $secondaryFont;
     font-weight: 600;

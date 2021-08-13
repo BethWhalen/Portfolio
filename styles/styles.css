@@ -291,6 +291,11 @@ header {
   margin: 0 auto;
 }
 
+.profile {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
