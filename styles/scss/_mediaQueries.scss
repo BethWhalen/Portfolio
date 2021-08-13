@@ -182,14 +182,24 @@
 // sm =====================================
 @media (max-width: 550px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
     }
+
+    .experience p {
+        font-size: 1.8rem;
+    }
+
+    .education::before {
+        height: 87%;
+    }
+
 
     .skill {
         ul {
             font-size: 1.6rem;
             li {
                 width: calc(100% / 3);
+                font-size: 4.5rem;
             }
         } 
     }
@@ -211,39 +221,27 @@
             }
     }
 }
-
+// xs ==============================================
 @media (max-width: 450px) {
-.projectCaption {
-    position: relative;
-    height: 100%;
-    padding: 15px;
-    opacity: 1;
-    //     p {
-    //         font-size: 1.6rem;
-    //         margin: 0;
-    //     }
-    //     h5 {
-    //         color: $accentColorC;
-    //     }
-    //     h6 {
-    //         color: $accentColorC;
-    //         font-size: 2rem;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         align-self: flex-start;
-    //         font-family: $primaryFont;
-    //         font-weight: 500;
-    //         font-size: 1.6rem;
-    //         text-transform: uppercase;
-    //         text-decoration: none;
-    //         color: $accentColorA;
-    //         padding: 5px 10px;
-    //         border: 2px solid $accentColorA;
-    //     }
-    //     a:hover {
-    //         background-color: $accentColorC;
-    //         border: 2px solid $accentColorC;
-    //     }
+    
+    .projectCaption {
+        background-color: $accentColorA;
+        position: relative;
+        height: 100%;
+        padding: 5px;
+        opacity: 1;
+            p {
+                color: $secondaryColor;
+            }
+            h5 {
+                color: $primaryColor;
+            }
+            h6 {
+                color: $primaryColor;
+            }
+            a {
+                color: $accentColorB;
+                border: 2px solid $accentColorB;
+            }
     }
 }
