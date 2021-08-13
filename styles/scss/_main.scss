@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
         p {
-            font-size: 1.6rem;
+            font-size: 2rem;
             margin: 20px 0;
         }
 }
@@ -47,7 +47,7 @@
     align-self: flex-start;
     padding: 8px;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     font-weight: 700;
     text-decoration: none;
     color: $accentColorB;
@@ -85,7 +85,7 @@
 
 .education::before {
     content: '';
-    height: 80%;
+    height: 85%;
     width: 2px;
     background-color: $secondaryColor;
     position: absolute;
@@ -96,12 +96,13 @@
 // h4 - education & skill titles
 h4 {
     margin: 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
 .experience ul {
     padding: 0;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -114,7 +115,7 @@ h4 {
 // h5 - education sub headings
 h5 {
     color: $primaryColor;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
     margin: 0;
 }
@@ -128,11 +129,12 @@ h5 {
     border-radius: 50%;
     position: absolute;
     left: -39px;
+    top: 8px;
 }
 
 .experience p {
     margin: 5px 0;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .dateOfEd {
@@ -150,14 +152,11 @@ h5 {
         li {
             text-align: center;
             width: calc(100% / 3);
-            font-size: 5rem;
+            font-size: 5.5rem;
             text-transform: uppercase;
         }
     }
     
-}
-.skill h5 {
-    font-size: 1.6rem;
 }
 
 // ====== PORTFOLIO GALLERY SECTION =============
@@ -213,26 +212,27 @@ h5 {
     width: 100%;
     padding: 15px;
     opacity: 0;
-        h4 {
-            color: $accentColorC;
-        }
         p {
             font-size: 1.6rem;
-            margin: 5px 0;
+            margin: 0;
         }
         h5 {
             color: $accentColorC;
+        }
+        h6 {
+            color: $accentColorC;
+            font-size: 2rem;
+            margin: 0;
         }
         a {
             align-self: flex-start;
             font-family: $primaryFont;
             font-weight: 500;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             text-transform: uppercase;
             text-decoration: none;
             color: $accentColorA;
             padding: 5px 10px;
-            margin: 5px;
             border: 2px solid $accentColorA;
         }
         a:hover {
@@ -240,7 +240,6 @@ h5 {
             border: 2px solid $accentColorC;
         }
 }
-
 
 .projectCaption:hover {
     opacity: 1;
@@ -279,7 +278,7 @@ h5 {
     flex-wrap: wrap;
     max-width: 60%;
     margin: 0 auto;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
         input,
         textarea {
             font-family: $primaryFont;
@@ -305,7 +304,7 @@ h5 {
     align-self: center;
     border: none;
     font-family: $primaryFont;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: $primaryColor;
     background-color: $accentColorA;
@@ -356,7 +355,7 @@ footer {
     background-color: $primaryColor;
     color: $accentColorA;
     font-family: $primaryFont;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px 0;
     text-align: center;
         p {

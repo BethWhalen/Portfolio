@@ -256,7 +256,7 @@ h3 {
   color: #6F6F6F;
   font-family: "Asap", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-transform: uppercase;
   margin: 0;
 }
@@ -293,14 +293,14 @@ header {
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin: 20px 0;
 }
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   margin: 0 0 20px 0;
 }
 
@@ -309,7 +309,7 @@ h2 {
       align-self: flex-start;
   font-family: "Asap", sans-serif;
   font-weight: 500;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -344,7 +344,7 @@ h2 {
 .stickyNav a {
   font-family: "Asap", sans-serif;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   text-decoration: none;
   color: #FFFFFF;
   padding: 5px;
@@ -387,7 +387,7 @@ h2 {
           justify-content: center;
 }
 .aboutText p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 20px 0;
 }
 
@@ -411,7 +411,7 @@ h2 {
       align-self: flex-start;
   padding: 8px;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   font-weight: 700;
   text-decoration: none;
   color: black;
@@ -449,7 +449,7 @@ h2 {
 
 .education::before {
   content: "";
-  height: 80%;
+  height: 85%;
   width: 2px;
   background-color: #6F6F6F;
   position: absolute;
@@ -459,12 +459,13 @@ h2 {
 
 h4 {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 .experience ul {
   padding: 0;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +482,7 @@ h4 {
 
 h5 {
   color: #333333;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin: 0;
 }
@@ -495,11 +496,12 @@ h5 {
   border-radius: 50%;
   position: absolute;
   left: -39px;
+  top: 8px;
 }
 
 .experience p {
   margin: 5px 0;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .dateOfEd {
@@ -524,12 +526,8 @@ h5 {
 .skill ul li {
   text-align: center;
   width: calc(100% / 3);
-  font-size: 5rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
-}
-
-.skill h5 {
-  font-size: 1.6rem;
 }
 
 .portfolio h3 {
@@ -594,27 +592,28 @@ h5 {
   padding: 15px;
   opacity: 0;
 }
-.projectCaption h4 {
-  color: #FF5A5F;
-}
 .projectCaption p {
   font-size: 1.6rem;
-  margin: 5px 0;
+  margin: 0;
 }
 .projectCaption h5 {
   color: #FF5A5F;
+}
+.projectCaption h6 {
+  color: #FF5A5F;
+  font-size: 2rem;
+  margin: 0;
 }
 .projectCaption a {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-family: "Asap", sans-serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
   padding: 5px 10px;
-  margin: 5px;
   border: 2px solid #FFFFFF;
 }
 .projectCaption a:hover {
@@ -667,7 +666,7 @@ h5 {
       flex-wrap: wrap;
   max-width: 60%;
   margin: 0 auto;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .contactForm input,
 .contactForm textarea {
@@ -697,7 +696,7 @@ h5 {
       align-self: center;
   border: none;
   font-family: "Asap", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #333333;
   background-color: #FFFFFF;
@@ -760,7 +759,7 @@ footer {
   background-color: #333333;
   color: #FFFFFF;
   font-family: "Asap", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 10px 0;
   text-align: center;
 }
@@ -768,6 +767,37 @@ footer p {
   margin: 0;
 }
 
+@media (max-width: 1100px) {
+  .galleryContainer {
+    padding: 20px;
+  }
+  .galleryContainer li {
+    width: 100%;
+    margin: 5px;
+  }
+  .galleryContainer li:nth-child(2n) {
+    margin-right: 5px;
+  }
+  .galleryContainer li:nth-child(-n+2) {
+    margin-bottom: 5px;
+  }
+
+  .projectCaption {
+    padding: 40px;
+  }
+  .projectCaption p {
+    font-size: 2rem;
+  }
+  .projectCaption h5 {
+    font-size: 2.4rem;
+  }
+  .projectCaption h6 {
+    font-size: 2.2rem;
+  }
+  .projectCaption a {
+    font-size: 1.8rem;
+  }
+}
 @media (max-width: 950px) {
   .experience {
     -webkit-box-orient: vertical;
@@ -789,6 +819,10 @@ footer p {
   }
 }
 @media (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+
   header {
     height: 70vh;
   }
@@ -867,18 +901,20 @@ footer p {
     font-size: 2.3rem;
   }
 
-  .galleryContainer {
-    padding: 20px;
+  .projectCaption {
+    padding: 15px;
   }
-  .galleryContainer li {
-    width: 100%;
-    margin: 5px;
+  .projectCaption p {
+    font-size: 1.6rem;
   }
-  .galleryContainer li:nth-child(2n) {
-    margin-right: 5px;
+  .projectCaption h5 {
+    font-size: 2rem;
   }
-  .galleryContainer li:nth-child(-n+2) {
-    margin-bottom: 5px;
+  .projectCaption h6 {
+    font-size: 1.8rem;
+  }
+  .projectCaption a {
+    font-size: 1.6rem;
   }
 
   .contact h3 {
@@ -904,5 +940,42 @@ footer p {
   .contactForm input {
     width: 100%;
     margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .skill ul {
+    font-size: 1.6rem;
+  }
+  .skill ul li {
+    width: calc(100% / 3);
+  }
+
+  .projectCaption {
+    padding: 5px;
+  }
+  .projectCaption p {
+    font-size: 1.6rem;
+  }
+  .projectCaption h5 {
+    font-size: 1.8rem;
+  }
+  .projectCaption h6 {
+    font-size: 1.6rem;
+  }
+  .projectCaption a {
+    font-size: 1.5rem;
+    padding: 2px 5px;
+  }
+}
+@media (max-width: 450px) {
+  .projectCaption {
+    position: relative;
+    height: 100%;
+    padding: 15px;
+    opacity: 1;
   }
 }
